@@ -1,0 +1,65 @@
+@import "remixicon/fonts/remixicon.css";
+@import "tailwindcss";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari */
+}
+.scrollbar-hide {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
+}
+
+@font-face {
+	font-family: "Cabinet Grotesk";
+	src: url("./assets/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff2")
+		format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Cabinet Grotesk";
+	src: url("./assets/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff2")
+		format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Cabinet Grotesk";
+	src: url("./assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.woff2")
+		format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-cabinet: "Cabinet Grotesk", sans-serif;
+	--color-white-1: #f8f9fa; /* seasalt */
+	--color-white-2: #e9ecef; /* antiflash-white */
+	--color-gray-1: #dee2e6; /* platinum */
+	--color-gray-2: #ced4da; /* french-gray */
+	--color-gray-3: #adb5bd; /* french-gray-2 */
+	--color-gray-4: #6c757d; /* slate-gray */
+	--color-gray-5: #495057; /* outer-space */
+	--color-gray-6: #343a40; /* onyx */
+	--color-black-1: #212529; /* eerie-black */
+}
