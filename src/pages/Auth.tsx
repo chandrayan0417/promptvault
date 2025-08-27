@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 type Props = { mode: "login" | "signup" };
 
 type LoginValues = {
-	identifier: string; // username ya email
+	identifier: string;
 	password: string;
 };
 
@@ -166,7 +166,7 @@ export default function Auth({ mode }: Props) {
 		<section className="flex h-dvh flex-1 bg-white-2">
 			<div className="mx-auto flex w-full max-w-md flex-col items-center gap-5 pt-40">
 				<div className="flex items-center gap-3">
-					<img src="./logo-dark.svg" alt="logo" className="h-15" />
+					<img src="/logo-dark.svg" alt="logo" className="h-15" />
 					<div>
 						<h1 className="font-normal text-4xl tracking-tight">{subTitle}</h1>
 						<p className="text-gray-500 text-sm">{title} to continue</p>
@@ -347,7 +347,6 @@ export default function Auth({ mode }: Props) {
 						>
 							{loading ? "Please wait..." : submitLabel}
 						</button>
-
 						<div className="text-gray-600 text-sm">
 							{isLogin ? (
 								<span>
@@ -364,7 +363,7 @@ export default function Auth({ mode }: Props) {
 									</Link>
 								</span>
 							)}
-						</div>
+						</div>{" "}
 					</div>
 				</form>
 			</div>
